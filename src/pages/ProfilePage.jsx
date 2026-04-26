@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useAuth, useNotification } from '../context/AppContext';
+import { useAuth, useNotification } from '../context/Appcontext';
 import { authService } from '../services/api';
 import { useForm } from '../hooks/index';
 import { User, Mail, Phone, FileText, Camera } from 'lucide-react';
