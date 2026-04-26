@@ -1,6 +1,6 @@
 import { Outlet, Link, NavLink, useNavigate } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
-import { useAuth, useTheme } from '../context/AppContext';
+import { useAuth, useTheme } from '../context/Appcontext';
 import { Moon, Sun, Menu, X, LogOut, LayoutDashboard, Shield, PlusCircle, User, Globe } from 'lucide-react';
 
 function NavItem({ to, children, end }) {
