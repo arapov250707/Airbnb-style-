@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { MapPin, Star, Users, Bed, Bath, Wifi, Check, ChevronLeft, Calendar, Edit, Trash2 } from 'lucide-react';
 import { propertyService, bookingService } from '../services/api';
-import { useAuth, useNotification } from '../context/AppContext';
+import { useAuth, useNotification } from '../context/Appcontext';
 import { useForm } from '../hooks/index';
 import ConfirmModal from '../components/common/ConfirmModal';
 import styles from './PropertyDetailPage.module.css';
