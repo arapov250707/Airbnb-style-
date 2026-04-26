@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Calendar, MapPin, Clock, CheckCircle, XCircle, PlusCircle, Building2 } from 'lucide-react';
 import { bookingService, propertyService } from '../services/api';
-import { useAuth, useNotification } from '../context/AppContext';
+import { useAuth, useNotification } from '../context/Appcontext';
 import ConfirmModal from '../components/common/ConfirmModal';
 import styles from './DashboardPage.module.css';
 
