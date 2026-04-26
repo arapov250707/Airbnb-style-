@@ -1,4 +1,4 @@
-import { useNotification } from '../context/AppContext';
+import { useNotification } from '../context/Appcontext';
 import { CheckCircle, XCircle, Info, X } from 'lucide-react';
 
 export default function NotificationToast() {
