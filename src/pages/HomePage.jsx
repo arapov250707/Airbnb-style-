@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Search, MapPin, ArrowRight, Mountain, Building2, TreePine, Home, Waves, Loader, Star, Key, X, CheckCircle } from 'lucide-react';
 import { propertyService, getApiKey, setApiKey } from '../services/api';
 import { useCitySearch } from '../hooks/useCitySearch';
-import { useNotification } from '../context/AppContext';
+import { useNotification } from '../context/Appcontext';
 
 const CATEGORIES = [
   { id: 'all',       label: 'All Stays',   icon: Home      },
