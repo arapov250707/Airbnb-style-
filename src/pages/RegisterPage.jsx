@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { useAuth, useNotification } from '../context/AppContext';
+import { useAuth, useNotification } from '../context/Appcontext';
 import { useForm } from '../hooks/index';
 import { Eye, EyeOff, Mail, Lock, User, UserPlus } from 'lucide-react';
 
