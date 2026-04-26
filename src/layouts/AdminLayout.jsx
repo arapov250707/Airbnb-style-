@@ -1,5 +1,5 @@
 import { Outlet, Link, NavLink, useNavigate } from 'react-router-dom';
-import { useAuth, useTheme } from '../context/AppContext';
+import { useAuth, useTheme } from '../context/Appcontext';
 import { LayoutDashboard, Home, Users, Building2, CalendarCheck, Moon, Sun, LogOut, ArrowLeft } from 'lucide-react';
 import styles from './AdminLayout.module.css';
 
