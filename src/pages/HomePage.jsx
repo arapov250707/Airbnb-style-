@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Search, MapPin, ArrowRight, Mountain, Building2, TreePine, Home, Waves, Loader, Star, Key, X, CheckCircle } from 'lucide-react';
 import { propertyService, getApiKey, setApiKey } from '../services/api';
-import { useCitySearch } from '../hooks/useCitySearch';
+import { useCitySearch } from '../hooks/UseCitySearch';
 import { useNotification } from '../context/Appcontext';
 
 const CATEGORIES = [
