@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { propertyService } from '../../services/api';
-import { useNotification } from '../../context/AppContext';
+import { useNotification } from '../../context/Appcontext';
 import ConfirmModal from '../../components/common/ConfirmModal';
 import { Plus, Pencil, Trash2, Star } from 'lucide-react';
 import styles from './AdminPages.module.css';
