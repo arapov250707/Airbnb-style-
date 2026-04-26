@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { useNotification } from '../context/AppContext';
+import { useNotification } from '../context/Appcontext';
 import { propertyService } from '../services/api';
 import PropertyForm from '../components/property/PropertyForm';
 import styles from './PropertyFormPage.module.css';
