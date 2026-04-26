@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { bookingService } from '../../services/api';
-import { useNotification } from '../../context/AppContext';
+import { useNotification } from '../../context/Appcontext';
 import ConfirmModal from '../../components/common/ConfirmModal';
 import { Trash2, Calendar } from 'lucide-react';
 import styles from './AdminPages.module.css';
