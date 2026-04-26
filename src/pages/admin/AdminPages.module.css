@@ -1,0 +1,35 @@
+.page { padding: 32px; min-height: 100vh; }
+.pageHeader { margin-bottom: 28px; }
+.pageTitle { font-family: var(--font-display); font-size: 1.9rem; font-weight: 400; }
+.pageSubtitle { color: var(--ink-muted); font-size: 14px; margin-top: 4px; }
+
+.kpiGrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 24px; }
+.kpiCard { background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius); padding: 18px; display: flex; align-items: center; gap: 14px; }
+.kpiIcon { width: 44px; height: 44px; border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.kpiValue { font-family: var(--font-display); font-size: 1.6rem; font-weight: 600; line-height: 1; }
+.kpiLabel { font-size: 12px; color: var(--ink-muted); margin-top: 3px; }
+
+.chartsRow { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px; }
+.chartCard { background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius); padding: 20px; }
+.chartTitle { font-size: 14px; font-weight: 600; margin-bottom: 16px; display: flex; align-items: center; gap: 6px; color: var(--ink); }
+.legend { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; justify-content: center; }
+.legendItem { display: flex; align-items: center; gap: 5px; font-size: 12px; color: var(--ink-muted); }
+.legendDot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+
+.tableCard { background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius); overflow: hidden; margin-top: 24px; }
+.tableHeader { display: flex; justify-content: space-between; align-items: center; padding: 16px 20px; border-bottom: 1px solid var(--card-border); gap: 12px; flex-wrap: wrap; }
+.tableHeader h3 { font-family: var(--font-display); font-size: 1.1rem; font-weight: 400; }
+
+.propImg { width: 48px; height: 36px; border-radius: 6px; object-fit: cover; }
+.propInfo strong { display: block; font-size: 14px; max-width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.propInfo span { font-size: 12px; color: var(--ink-muted); }
+
+.userRow { display: flex; align-items: center; gap: 10px; }
+.userAvatar { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; }
+.userInfo strong { display: block; font-size: 14px; }
+.userInfo span { font-size: 12px; color: var(--ink-muted); }
+
+.actions { display: flex; gap: 6px; }
+
+@media (max-width: 1024px) { .kpiGrid { grid-template-columns: repeat(2, 1fr); } .chartsRow { grid-template-columns: 1fr; } }
+@media (max-width: 768px) { .page { padding: 20px 16px; } .kpiGrid { grid-template-columns: 1fr 1fr; } }

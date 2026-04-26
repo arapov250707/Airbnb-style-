@@ -1,0 +1,23 @@
+.layout { display: grid; grid-template-columns: 280px 1fr; gap: 28px; align-items: start; }
+
+.avatarCard { background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius); padding: 28px; text-align: center; position: sticky; top: 84px; }
+.avatarWrapper { position: relative; width: 100px; height: 100px; margin: 0 auto 16px; cursor: pointer; }
+.avatar { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 3px solid var(--rust); }
+.avatarOverlay { position: absolute; inset: 0; background: rgba(26,23,20,0.4); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; opacity: 0; transition: opacity var(--transition); }
+.avatarWrapper:hover .avatarOverlay { opacity: 1; }
+.profileName { font-family: var(--font-display); font-size: 1.3rem; font-weight: 400; margin-bottom: 8px; }
+.profileMeta { margin-top: 16px; display: flex; flex-direction: column; gap: 8px; }
+.profileMeta div { display: flex; align-items: center; justify-content: center; gap: 6px; font-size: 13px; color: var(--ink-muted); }
+
+.formCard { background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius); padding: 28px; }
+.formTitle { font-family: var(--font-display); font-size: 1.3rem; font-weight: 400; margin-bottom: 20px; }
+.formGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+.formActions { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+.readonlyInfo { display: flex; flex-direction: column; gap: 2px; }
+.readonlyInfo span { display: flex; align-items: center; gap: 4px; font-size: 13px; color: var(--ink-muted); }
+
+@media (max-width: 768px) {
+  .layout { grid-template-columns: 1fr; }
+  .avatarCard { position: static; }
+  .formGrid { grid-template-columns: 1fr; }
+}

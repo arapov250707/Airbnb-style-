@@ -1,0 +1,22 @@
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+.grid4 { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; margin-bottom: 16px; }
+
+.amenitiesSection { margin-top: 20px; }
+.amenityChips { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0; }
+.chip { padding: 6px 14px; border-radius: 20px; font-size: 13px; border: 1.5px solid var(--card-border); background: var(--card); color: var(--ink-soft); cursor: pointer; transition: all var(--transition); }
+.chip:hover { border-color: var(--rust); color: var(--rust); }
+.chipActive { background: var(--rust); border-color: var(--rust); color: #fff; }
+
+.customAmenity { display: flex; gap: 8px; margin-top: 10px; }
+.customAmenity .form-input { flex: 1; }
+
+.selectedAmenities { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.customTag { display: inline-flex; align-items: center; gap: 4px; background: var(--sand-deep); color: var(--ink-soft); font-size: 12px; padding: 3px 10px; border-radius: 20px; }
+.customTag button { background: none; border: none; cursor: pointer; color: var(--ink-muted); display: flex; align-items: center; padding: 0; }
+
+.formActions { margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--card-border); }
+
+@media (max-width: 768px) {
+  .grid2 { grid-template-columns: 1fr; }
+  .grid4 { grid-template-columns: repeat(2, 1fr); }
+}
